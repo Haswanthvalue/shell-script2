@@ -1,7 +1,7 @@
 #!bin/bash
 
 USERID= $(id - u)
-if [ $userid -ne 0 ]
+if [ $USERID -ne 0 ]
 then 
 echo "error : plz run the script through root access"
 fi 
