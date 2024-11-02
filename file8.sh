@@ -1,13 +1,13 @@
 #!bin/bash
 
-USERID= $(id - u)
+USERID= $(id -u)
 
 if [ $USERID -ne 0 ]
 then 
 echo "error : plz run the script through root access"
 
 fi 
-yum install maven -Y
+yum install maven -y
 
 if [ $? -ne 0 ]
 then 
